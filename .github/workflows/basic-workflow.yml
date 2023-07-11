@@ -45,6 +45,7 @@ jobs:
         with:
           repository: 'im-sandbox-mikaelt/hello-HCAI-composite-action'
           path: ./.github/actions/hello-HCAI-composite-action
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Run a private composite action
         uses: ./.github/actions/hello-HCAI-composite-action
